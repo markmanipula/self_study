@@ -1,3 +1,6 @@
+#Mark Manipula
+#This is some solutions to some leetcode problems
+
 #containers duplicate
 
 #Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
@@ -11,13 +14,10 @@ def containsDuplicate(self, nums: List[int]) -> bool:
 #             if i not in no_dups:
 #                 no_dups.append(i)
 #             else:
-#                 return True
-            
+#                 return True            
 #         return False
 
-
-
-        #a little better
+        #a little better approach
 #         nums.sort()
     
 #         checker = 0
@@ -27,7 +27,6 @@ def containsDuplicate(self, nums: List[int]) -> bool:
 #                 checker += 1
             
 #         return checker > 0
-
 
       nums.sort()
     
@@ -41,6 +40,8 @@ def containsDuplicate(self, nums: List[int]) -> bool:
             
       return False
 
+
+#-----------------------------------------------------------------------------------------------------------------#
 
 #Valid anagram
 #Given two strings s and t, return true if t is an anagram of s, and false otherwise.
@@ -62,6 +63,7 @@ def isAnagram(self, s: str, t: str) -> bool:
         #if the len of the list is 0 that means its an anagram
       return len(s_list) == 0
 
+#-----------------------------------------------------------------------------------------------------------------#
 
 #Find pivot index 
 #Given an array of integers nums, calculate the pivot index of this array.
@@ -86,16 +88,14 @@ def pivotIndex(self, nums: List[int]) -> int:
 #             if left_sum == right_sum:
 #                 return i + 1
             
-#             right_sum = 0
-        
+#             right_sum = 0        
         
 #         return -1
 
         left_list = []
         right_list = []
         left_sum = 0
-        right_sum = 0
-        
+        right_sum = 0        
         
         for i in range(0, len(nums)):
             
@@ -116,9 +116,7 @@ def pivotIndex(self, nums: List[int]) -> int:
             
         return -1;
     
-    
-
-    #working on a better solution
+      #working on a better solution
 #     total_left_sum = 0
 #     total_right_sum = sum(nums)
     
