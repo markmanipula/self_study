@@ -4,6 +4,31 @@
 
 def containsDuplicate(self, nums: List[int]) -> bool:
     
+    # no_dups = []
+        
+        #TOO SLOW!
+#         for i in nums:
+#             if i not in no_dups:
+#                 no_dups.append(i)
+#             else:
+#                 return True
+            
+#         return False
+
+
+
+        #a little better
+#         nums.sort()
+    
+#         checker = 0
+
+#         for i in range(0, len(nums) - 1):
+#             if nums[i] == nums[i + 1]:
+#                 checker += 1
+            
+#         return checker > 0
+
+
       nums.sort()
     
       checker = 0
